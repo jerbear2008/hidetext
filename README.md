@@ -1,9 +1,10 @@
 # hidetext-source
 Hide text in other text with zero width characters. _PUBLIC DOMAIN_
+
 **USE AT YOUR OWN RISK**
 
 ## Download
-[Download](https://github.com/jerbear2008/hidetext-source/raw/main/HidetextClient.exe) and run HidetextClient.exe, then minimize the pop-up. Close it to stop.
+[Download](https://j.tiny.us/hidetext) and run HidetextClient.exe, then minimize the pop-up. Close it to stop.
 
 ## How to use
 Select text, then press Ctrl + E (encode), and input some secret text to hide within. 
