@@ -3,6 +3,8 @@ Hide text in other text with zero width characters. _PUBLIC DOMAIN_
 
 **USE AT YOUR OWN RISK**
 
+Hidetext is based on and is compatible with [jasonkimprojects/zerosteg](https://github.com/jasonkimprojects/zerosteg). It is has a really good explanation on how the encoding works.
+
 ## Download
 [Download](https://j.tiny.us/hidetext) and run HidetextClient.exe, then minimize the pop-up. Close it to stop.
 
