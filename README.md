@@ -1,5 +1,6 @@
 # hidetext-source
-Hide text in other text with zero width characters. PUBLIC DOMAIN
+Hide text in other text with zero width characters. _PUBLIC DOMAIN_
+**USE AT YOUR OWN RISK**
 
 ## Download
 [Download](https://github.com/jerbear2008/hidetext-source/raw/main/HidetextClient.exe) and run HidetextClient.exe, then minimize the pop-up. Close it to stop.
