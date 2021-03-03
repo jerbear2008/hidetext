@@ -1,4 +1,4 @@
-# hidetext-source
+# hidetext-source v1.0.0 OLD
 Hide text in other text with zero width characters. _PUBLIC DOMAIN_
 
 **USE AT YOUR OWN RISK**
