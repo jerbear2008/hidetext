@@ -1,4 +1,4 @@
-# Hidetext v1.1.0
+# Hidetext v1.1.1
 Hide text in other text with zero width characters. _PUBLIC DOMAIN_
 
 **USE AT YOUR OWN RISK**
