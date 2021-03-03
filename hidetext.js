@@ -1,19 +1,56 @@
+let instructions = document.createTextNode("Select any text, then press Ctrl + E (encode), then input a secret. The hidetext will be copied to your clipboard for you to paste. Select any hidetext, then press Ctrl + D (decrypt) to reveal the secret text. This is an app version of jasonkimprojects/zerosteg on github.");
+document.body.appendChild(instructions);
+
+let table = document.createElement('TABLE');
+table.border = '1';
+let tableBody = document.createElement('TBODY');
+table.appendChild(tableBody);
+function addRow(one, two, three){
+  let tr = document.createElement('TR');
+
+  let tdOne = document.createElement('TD');
+  tdOne.width = '100';
+  tdOne.appendChild(document.createTextNode(one));
+  tr.appendChild(tdOne);
+
+  let tdTwo = document.createElement('TD');
+  tdTwo.width = '300';
+  tdTwo.appendChild(document.createTextNode(two));
+  tr.appendChild(tdTwo);
+
+  let tdThree = document.createElement('TD');
+  tdThree.width = '350';
+  tdThree.appendChild(document.createTextNode(three));
+  tr.appendChild(tdThree);
+
+  tableBody.appendChild(tr);
+}
+addRow("Type", "Hidetext", "Secret");
+document.body.appendChild(table);
+
+//--------------------------------------------
+
 Hotkey('^d', function(){
-  let tempClip = Clipboard
-  Send("{Ctrl down}c{Ctrl up}")
+  let tempClip = Clipboard;
+  Send("{Ctrl down}c{Ctrl up}");
   if(typeof Clipboard === "string"){
-    MsgBox(decode(Clipboard))
+    let decoded = decode(Clipboard);
+    MsgBox(decoded);
+    addRow("Decode", tempClip, decoded);
   }
-  Clipboard = tempClip
+  Clipboard = tempClip;
 })
 Hotkey('^e', function(){
-  let tempClip = Clipboard
-  Send("{Ctrl down}c{Ctrl up}")
-  if(typeof Clipboard === "string"){
-    let toHide = InputBox("HideText", "What would you like to hide?")
-    Clipboard = encode(Clipboard, toHide)
-  } else {
-    Clipboard = tempClip
+  let tempClip = Clipboard;
+  Send("{Ctrl down}c{Ctrl up}");
+  let mask = Clipboard;
+  Clipboard = tempClip;
+
+  if(typeof mask === "string"){
+    let toHide = InputBox("HideText", "What would you like to hide?");
+    let encoded = encode(mask, toHide);
+    Clipboard = encoded;
+    addRow("Encode", encoded, toHide);
   }
 })
 
