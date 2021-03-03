@@ -1,4 +1,4 @@
-# hidetext-source
+# Hidetext v1.1.0
 Hide text in other text with zero width characters. _PUBLIC DOMAIN_
 
 **USE AT YOUR OWN RISK**
@@ -6,15 +6,18 @@ Hide text in other text with zero width characters. _PUBLIC DOMAIN_
 Hidetext is based on and is compatible with [jasonkimprojects/zerosteg](https://github.com/jasonkimprojects/zerosteg). It is has a really good explanation on how the encoding works.
 
 ## Download
-[Download](https://j.tiny.us/hidetext) and run HidetextClient.exe, then minimize the pop-up. Close it to stop.
+[Download](https://github.com/jerbear2008/hidetext-source/raw/main/Hidetext.exe) and run Hidetext.exe anywhere.
 
 ## How to use
 Select text, then press Ctrl + E (encode), and input some secret text to hide within. 
+
 The hidetext will be copied to your clipboard. Select hidetext, then press Ctrl + D (decrypt) to reveal the secret text.
 
+The window will show a list of all the encodings and decodings that you can copy from.
+
 ## Compiling
-Use the latest version of AHK to compile hidetext.ahk to hidetext.exe, then run the iexpress command as admin, and use the hidetext.SED file to compile. I used resource hacker to change the output file's icon to the included search.ico.
+Use the latest version of AHK to compile Hidetext.ahk to Hidetext.exe. I used resource hacker to change all the output file's icons to the included search.ico.
 
 ## Notes
 You can also use the [ZeroSteg](https://nosajmik.codes/zerosteg/) converter to create and decode hidetext.
-This file was created with the Win10 iexpress command and contains a compiled AHK Exo file and a JS file that Exo loads. The detections on VirusTotal are because it is unsigned and listens to keystrokes and the clipboard.
+This file is a modified AHK Exo file and an embedded JS file that Exo loads. The detections on VirusTotal are because it is an unsigned compiled AHK file, which are commonly used by script kiddies.
