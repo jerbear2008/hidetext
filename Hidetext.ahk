@@ -43,7 +43,7 @@ Hotkey('^d', function(){
   if(typeof Clipboard === "string"){
     let decoded = decode(Clipboard);
     MsgBox(decoded);
-    addRow("Decode", tempClip, decoded);
+    addRow("Decode", Clipboard, decoded);
   }
   Clipboard = tempClip;
 })
