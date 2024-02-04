@@ -1,7 +1,8 @@
 # Hidetext v1.1.1
-Hide text in other text with zero width characters. _PUBLIC DOMAIN_
 
-**USE AT YOUR OWN RISK**
+(by the way, this project is an old mess, you have been warned)
+
+Hide text in other text with zero width characters.
 
 Hidetext is based on and is compatible with [jasonkimprojects/zerosteg](https://github.com/jasonkimprojects/zerosteg). It is has a really good explanation on how the encoding works.
 
